@@ -93,14 +93,15 @@ We also provide a docker image. We recommend using a venv to run the code inside
 
 ```bash
 docker pull nkeetha/splatam:v1
-bash bash_scripts/docker_start.bash
+bash bash_scripts/start_docker.bash
 cd /SplaTAM/
-pip install virtualenv --user
+# pip install virtualenv --user
+pip install virtualenv
 mkdir venv
 cd venv
 virtualenv --system-site-packages splatam
 source ./splatam/bin/activate
-pip install -r venv_requirements.txt
+pip install -r ../venv_requirements.txt
 ```
 
 Setting up a singularity container is similar:
