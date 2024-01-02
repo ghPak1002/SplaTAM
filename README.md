@@ -101,6 +101,20 @@ mkdir venv
 cd venv
 virtualenv --system-site-packages splatam
 source ./splatam/bin/activate
+```
+```(optional)# I have a environment problem about openmpi
+# Install Open MPI v4
+cd ../
+wget https://download.open-mpi.org/release/open-mpi/v4.0/openmpi-4.0.0.tar.gz
+tar -xvf openmpi-4.0.0.tar.gz
+cd openmpi-4.0.0
+./configure --prefix=/usr/local
+make all
+sudo make install
+sudo ldconfig
+
+```
+``` install virtual enviroment dependency
 pip install -r ../venv_requirements.txt
 ```
 
