@@ -104,7 +104,7 @@ source ./splatam/bin/activate
 pip install -r ../venv_requirements.txt
 ```
 
-(optional) I have a environment problem about openmpi
+(optional) I have a environment problem about openmpi. Before install venv_requirements.txt, I install openmpi v4.
 ```bash
 # Install Open MPI v4
 cd ../
