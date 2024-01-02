@@ -113,8 +113,8 @@ tar -xvf openmpi-4.0.0.tar.gz
 cd openmpi-4.0.0
 ./configure --prefix=/usr/local
 make all
-sudo make install
-sudo ldconfig
+make install
+ldconfig
 ```
 
 
