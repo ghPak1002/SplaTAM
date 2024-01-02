@@ -101,8 +101,11 @@ mkdir venv
 cd venv
 virtualenv --system-site-packages splatam
 source ./splatam/bin/activate
+pip install -r ../venv_requirements.txt
 ```
-```(optional)# I have a environment problem about openmpi
+
+(optional) I have a environment problem about openmpi
+```bash
 # Install Open MPI v4
 cd ../
 wget https://download.open-mpi.org/release/open-mpi/v4.0/openmpi-4.0.0.tar.gz
@@ -112,11 +115,8 @@ cd openmpi-4.0.0
 make all
 sudo make install
 sudo ldconfig
+```
 
-```
-``` install virtual enviroment dependency
-pip install -r ../venv_requirements.txt
-```
 
 Setting up a singularity container is similar:
 ```bash
