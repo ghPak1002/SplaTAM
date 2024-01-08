@@ -176,31 +176,31 @@ We will use the iPhone dataset as an example to show how to use SplaTAM. The fol
 To run SplaTAM, please use the following command:
 
 ```bash
-python scripts/splatam.py configs/iphone/splatam.py
+python3.10 scripts/splatam.py configs/iphone/splatam.py
 ```
 
 To visualize the final interactive SplaTAM reconstruction, please use the following command:
 
 ```bash
-python viz_scripts/final_recon.py configs/iphone/splatam.py
+python3.10 viz_scripts/final_recon.py configs/iphone/splatam.py
 ```
 
 To visualize the SplaTAM reconstruction in an online fashion, please use the following command:
 
 ```bash
-python viz_scripts/online_recon.py configs/iphone/splatam.py
+python3.10 viz_scripts/online_recon.py configs/iphone/splatam.py
 ```
 
 To run 3D Gaussian Splatting on the SplaTAM reconstruction, please use the following command:
 
 ```bash
-python scripts/post_splatam_opt.py configs/iphone/post_splatam_opt.py
+python3.10 scripts/post_splatam_opt.py configs/iphone/post_splatam_opt.py
 ```
 
 To run 3D Gaussian Splatting on a dataset using ground truth poses, please use the following command:
 
 ```bash
-python scripts/gaussian_splatting.py configs/iphone/gaussian_splatting.py
+python3.10 scripts/gaussian_splatting.py configs/iphone/gaussian_splatting.py
 ```
 
 ## Downloads
